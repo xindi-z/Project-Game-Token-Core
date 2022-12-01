@@ -13,7 +13,7 @@ namespace Grid_game
     public: 
         
         Token(int init_hp, int init_pp, const Board &the_board) 
-        : Token_ase(the_board.get_start_position().first, the_board.get_start_position().second, init_hp, init_pp, the_board){
+        : Token_base(the_board.get_start_position().first, the_board.get_start_position().second, init_hp, init_pp, the_board){
         }
             
         void move(direction dir) override;
